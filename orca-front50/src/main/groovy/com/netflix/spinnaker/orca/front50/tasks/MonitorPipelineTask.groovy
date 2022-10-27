@@ -39,7 +39,7 @@ class MonitorPipelineTask implements OverridableTimeoutRetryableTask {
   ObjectMapper objectMapper
 
   long backoffPeriod = TimeUnit.SECONDS.toMillis(15)
-  long timeout = TimeUnit.HOURS.toMillis(12)
+  long timeout = TimeUnit.HOURS.toMillis(24)
 
   @Autowired
   public MonitorPipelineTask(ExecutionRepository executionRepository, ObjectMapper objectMapper) {
